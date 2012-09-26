@@ -1,3 +1,53 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content {
+  min-height: 500px;
+  position: relative;
+  padding: 140px 0;
+  &.dreambid {
+    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-dreambid-clouds.png")) center 30px repeat-x fixed, url(image_path("bg-dreambid.png")) repeat fixed;
+  }
+  &.signal {
+    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-signal.png")) repeat fixed;
+  }
+  &.lvlup {
+    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-lvlup-cubes.png")) center top repeat-x fixed, url(image_path("bg-lvlup.png")) repeat fixed;
+  }
+  &.signal {
+    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-signal.png")) repeat fixed;
+  }
+  &.ocw {
+    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-onecareway.png")) repeat fixed;
+  }
+  &.abyss {
+    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-abyss.png")) repeat fixed;
+  }
+  .hd, .ft {
+    position: absolute;
+    z-index: 2;
+    height: 106px;
+    width: 100%;
+    pointer-events: none;
+  }
+  .hd {
+    background: url(image_path("bg-main-contentTop.png")) center top repeat-x;
+    top: 0;
+  }
+  .ft {
+    bottom: 0;
+    background: url(image_path("bg-main-contentBottom.png")) center bottom repeat-x;
+  }
+  .logo {
+    text-align: center;
+  }
+  .carousel {
+    margin-top: 120px;
+    text-align: center;
+    img {
+      border: 10px solid rgba(0,0,0,0.4);
+      @include border-radius(10px);
+    }
+  }
+}

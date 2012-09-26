@@ -2,8 +2,9 @@
 %html
   %head
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-      %title= content_for?(:title) ? yield(:title) : "Borudesign Redux"
-      %meta{:content => content_for?(:description) ? yield(:description) : "Borudesign Redux", :name => "description"}
+      %title= content_for?(:title) ? yield(:title) : "Boru Design | User Experience and UI Design Professional Brian Cleveland"
+      %meta{:content => content_for?(:description) ? yield(:description) : "Boru Design: User Experience and UI Design Professional Brian Cleveland", :name => "description"}
+      %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
         = stylesheet_link_tag "application", :media => "all"
         = javascript_include_tag "application"
         = csrf_meta_tags
@@ -19,7 +20,98 @@
           .row
             .span12
               = render 'layouts/messages'
-              = yield
-          %footer
-      / ! end of .container
-    / ! end of #main
+      = yield
+      %footer
+        .hiddend
+          .signal-carousel-items
+            #sig.modal.hide.fade
+              %button.close{"data-dismiss" => "modal", :type => "button"}
+                %i.icon-remove
+              .modal-body
+                #sig-1.carousel.slide{data:{interval:"false"}}
+                  .carousel-inner
+                    .item.active
+                      %a{href:"#sig", "data-toggle" => "modal"}
+                        %img{src:asset_path("img-lg-sig-2.jpg")}
+                    .item
+                      %a(href="#sig-4" data-toggle="modal")
+                        %img{src:asset_path("img-lg-sig-4.jpg")}
+                    .item
+                      %a(href="#sig-5" data-toggle="modal")
+                        %img{src:asset_path("img-lg-sig-5.jpg")}
+                    .item
+                      %a(href="#sig-6" data-toggle="modal")
+                        %img{src:asset_path("img-lg-sig-6.jpg")}
+                    .item
+                      %a(href="#sig-1" data-toggle="modal")
+                        %img{src:asset_path("img-lg-sig-1.jpg")}
+                    .item
+                      %a(href="#sig-3" data-toggle="modal")
+                        %img{src:asset_path("img-lg-sig-3.jpg")}
+                  %a.carousel-control.left{href:"#sig-1", data:{slide:"prev"}} &lsaquo;
+                  %a.carousel-control.right{href:"#sig-1", data:{slide:"next"}} &rsaquo;
+
+          .dreambid-carousel-items
+            #dreambid.modal.hide.fade
+              %button.close{"data-dismiss" => "modal", :type => "button"}
+                %i.icon-remove
+              .modal-body
+                #dreambid-1.carousel.slide{data:{interval:"false"}}
+                  .carousel-inner
+                    .item.active
+                      %img{src:asset_path("img-lg-DB-1.jpg")}
+                    .item
+                      %img{src:asset_path("img-lg-DB-2.jpg")}
+                    .item
+                      %img{src:asset_path("img-lg-DB-3.jpg")}
+                    .item
+                      %img{src:asset_path("img-lg-DB-4.jpg")}
+                  %a.carousel-control.left{href:"#dreambid-1", data:{slide:"prev"}} &lsaquo;
+                  %a.carousel-control.right{href:"#dreambid-1", data:{slide:"next"}} &rsaquo;
+
+          .abyss-carousel-items
+            #abyss.modal.hide.fade
+              %button.close{"data-dismiss" => "modal", :type => "button"}
+                %i.icon-remove
+              .modal-body
+                #abyss-1.carousel.slide{data:{interval:"false"}}
+                  .carousel-inner
+                    .item.active
+                      %img{src:asset_path("img-lg-poster-1.jpg")}
+                    .item
+                      %img{src:asset_path("img-lg-poster-2.jpg")}
+                    .item
+                      %img{src:asset_path("img-lg-poster-3.jpg")}
+                  %a.carousel-control.left{href:"#abyss-1", data:{slide:"prev"}} &lsaquo;
+                  %a.carousel-control.right{href:"#abyss-1", data:{slide:"next"}} &rsaquo;
+
+          .lvlup-carousel-items
+            #lvlup.modal.hide.fade
+              %button.close{"data-dismiss" => "modal", :type => "button"}
+                %i.icon-remove
+              .modal-body
+                #lvlup-1.carousel.slide{data:{interval:"false"}}
+                  .carousel-inner
+                    .item.active
+                      %img{src:asset_path("img-lg-lvlup-1.jpg")}
+                    .item
+                      %img{src:asset_path("img-lg-lvlup-2.jpg")}
+                    .item
+                      %img{src:asset_path("img-lg-lvlup-3.jpg")}
+                  %a.carousel-control.left{href:"#lvlup-1", data:{slide:"prev"}} &lsaquo;
+                  %a.carousel-control.right{href:"#lvlup-1", data:{slide:"next"}} &rsaquo;
+          .ocw-carousel-items
+            #ocw.modal.hide.fade
+              %button.close{"data-dismiss" => "modal", :type => "button"}
+                %i.icon-remove
+              .modal-body
+                #ocw-1.carousel.slide{data:{interval:"false"}}
+                  .carousel-inner
+                    .item.active
+                      %img{src:asset_path("img-lg-ocw-1.jpg")}
+                    .item
+                      %img{src:asset_path("img-lg-ocw-2.jpg")}
+                    .item
+                      %img{src:asset_path("img-lg-ocw-3.jpg")}
+                  %a.carousel-control.left{href:"#ocw-1", data:{slide:"prev"}} &lsaquo;
+                  %a.carousel-control.right{href:"#ocw-1", data:{slide:"next"}} &rsaquo;

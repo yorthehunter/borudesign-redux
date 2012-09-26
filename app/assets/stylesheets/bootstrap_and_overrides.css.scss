@@ -1,3 +1,56 @@
 @import "bootstrap";
 body { padding-top: 60px; }
 @import "bootstrap-responsive";
+
+body {
+  background: #F0F0F0 url(image_path("bg-main.png")) repeat fixed;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 0.25em;
+}
+h1, h2 {
+  line-height: 1.5em;
+}
+h3, h4, h5 {
+  line-height: 1.25em;
+}
+
+.modal {
+  width: 800px;
+  margin-left: -400px;
+  margin-top: -300px;
+  .close {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #FFF;
+    @include border-radius(20px);
+    z-index: 1100;
+    @include opacity(1);
+    color: rgba(0,0,0,0.5);
+    &:hover {
+      color: rgba(0,0,0,0.9);
+    }
+  }
+  .modal-body {
+    max-height: 600px;
+  }
+}
+
+.thumbnail {
+  margin-bottom: 20px;
+  padding: 0;
+  border: 10px solid rgba(0,0,0,0.4);
+  @include border-radius(10px);
+}
+
+.padded {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
