@@ -10,6 +10,12 @@
   p,h1,h2,h3,h4,h5 {
     color: #DDD;
   }
+  a {
+    color: #8ECDFF;
+    &:hover {
+      color: #005580;
+    }
+  }
   h1, h2, h3, h4, h5 {
     text-shadow: 0 1px 0 rgba(0,0,0,0.7);
   }
@@ -18,13 +24,25 @@
     p,h1,h2,h3,h4,h5 {
       color: #444;
     }
+    a {
+      color: #08C;
+      &:hover {
+        color: #005580;
+      }
+    }
     h1, h2, h3, h4, h5 {
-      text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+      text-shadow: none;
+    }
+  }
+
+  h1 {
+    small {
+      font-size: 0.5em;
     }
   }
 
   &.dreambid {
-    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-dreambid-clouds.png")) center 30px repeat-x fixed, url(image_path("bg-dreambid.png")) repeat fixed;
+    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-dreambid-clouds.png")) center top repeat-x fixed, url(image_path("bg-dreambid.png")) repeat fixed;
   }
   &.signal {
     background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-signal.png")) repeat fixed;
@@ -36,10 +54,11 @@
     background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-signal.png")) repeat fixed;
   }
   &.ocw {
-    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-onecareway.png")) repeat fixed;
+    background-color: #FAF6E3;
+    background: url(image_path("bg-lr-gradient.png")) right bottom no-repeat fixed, url(image_path("bg-ul-gradient.png")) left top no-repeat fixed, #FAF6E3 url(image_path("bg-ur-gradient.png")) right top no-repeat fixed;
   }
   &.abyss {
-    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-abyss.png")) repeat fixed;
+    background: url(image_path("bg-abyss-arm.png")) top right fixed no-repeat, url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-abyss.png")) bottom repeat-x fixed;
   }
   .hd, .ft {
     position: absolute;

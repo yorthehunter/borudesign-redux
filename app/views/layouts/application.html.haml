@@ -16,15 +16,14 @@
           = render 'layouts/navigation'
     #main{:role => "main"}
       .container
-        .content
-          .row
-            .span12
-              = render 'layouts/messages'
+        .row
+          .span12
+            = render 'layouts/messages'
       = yield
       %footer
         .hiddend
           .signal-carousel-items
-            #sig.modal.hide.fade
+            #sig.modal.hide
               %button.close{"data-dismiss" => "modal", :type => "button"}
                 %i.icon-remove
               .modal-body
@@ -48,11 +47,13 @@
                     .item
                       %a(href="#sig-3" data-toggle="modal")
                         %img{src:asset_path("img-lg-sig-3.jpg")}
-                  %a.carousel-control.left{href:"#sig-1", data:{slide:"prev"}} &lsaquo;
-                  %a.carousel-control.right{href:"#sig-1", data:{slide:"next"}} &rsaquo;
+                  %a.carousel-control.left{href:"#sig-1", data:{slide:"prev"}}
+                    %i.icon-chevron-left
+                  %a.carousel-control.right{href:"#sig-1", data:{slide:"next"}}
+                    %i.icon-chevron-right
 
           .dreambid-carousel-items
-            #dreambid.modal.hide.fade
+            #dreambid.modal.hide
               %button.close{"data-dismiss" => "modal", :type => "button"}
                 %i.icon-remove
               .modal-body
@@ -66,11 +67,13 @@
                       %img{src:asset_path("img-lg-DB-3.jpg")}
                     .item
                       %img{src:asset_path("img-lg-DB-4.jpg")}
-                  %a.carousel-control.left{href:"#dreambid-1", data:{slide:"prev"}} &lsaquo;
-                  %a.carousel-control.right{href:"#dreambid-1", data:{slide:"next"}} &rsaquo;
+                  %a.carousel-control.left{href:"#dreambid-1", data:{slide:"prev"}}
+                    %i.icon-chevron-left
+                  %a.carousel-control.right{href:"#dreambid-1", data:{slide:"next"}}
+                    %i.icon-chevron-right
 
           .abyss-carousel-items
-            #abyss.modal.hide.fade
+            #abyss.modal.hide
               %button.close{"data-dismiss" => "modal", :type => "button"}
                 %i.icon-remove
               .modal-body
@@ -82,11 +85,13 @@
                       %img{src:asset_path("img-lg-poster-2.jpg")}
                     .item
                       %img{src:asset_path("img-lg-poster-3.jpg")}
-                  %a.carousel-control.left{href:"#abyss-1", data:{slide:"prev"}} &lsaquo;
-                  %a.carousel-control.right{href:"#abyss-1", data:{slide:"next"}} &rsaquo;
+                  %a.carousel-control.left{href:"#abyss-1", data:{slide:"prev"}}
+                    %i.icon-chevron-left
+                  %a.carousel-control.right{href:"#abyss-1", data:{slide:"next"}}
+                    %i.icon-chevron-right
 
           .lvlup-carousel-items
-            #lvlup.modal.hide.fade
+            #lvlup.modal.hide
               %button.close{"data-dismiss" => "modal", :type => "button"}
                 %i.icon-remove
               .modal-body
@@ -98,10 +103,13 @@
                       %img{src:asset_path("img-lg-lvlup-2.jpg")}
                     .item
                       %img{src:asset_path("img-lg-lvlup-3.jpg")}
-                  %a.carousel-control.left{href:"#lvlup-1", data:{slide:"prev"}} &lsaquo;
-                  %a.carousel-control.right{href:"#lvlup-1", data:{slide:"next"}} &rsaquo;
+                  %a.carousel-control.left{href:"#lvlup-1", data:{slide:"prev"}}
+                    %i.icon-chevron-left
+                  %a.carousel-control.right{href:"#lvlup-1", data:{slide:"next"}}
+                    %i.icon-chevron-right
+
           .ocw-carousel-items
-            #ocw.modal.hide.fade
+            #ocw.modal.hide
               %button.close{"data-dismiss" => "modal", :type => "button"}
                 %i.icon-remove
               .modal-body
@@ -113,5 +121,7 @@
                       %img{src:asset_path("img-lg-ocw-2.jpg")}
                     .item
                       %img{src:asset_path("img-lg-ocw-3.jpg")}
-                  %a.carousel-control.left{href:"#ocw-1", data:{slide:"prev"}} &lsaquo;
-                  %a.carousel-control.right{href:"#ocw-1", data:{slide:"next"}} &rsaquo;
+                  %a.carousel-control.left{href:"#ocw-1", data:{slide:"prev"}}
+                    %i.icon-chevron-left
+                  %a.carousel-control.right{href:"#ocw-1", data:{slide:"next"}}
+                    %i.icon-chevron-right
