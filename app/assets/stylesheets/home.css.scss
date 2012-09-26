@@ -6,6 +6,23 @@
   min-height: 500px;
   position: relative;
   padding: 140px 0;
+
+  p,h1,h2,h3,h4,h5 {
+    color: #DDD;
+  }
+  h1, h2, h3, h4, h5 {
+    text-shadow: 0 1px 0 rgba(0,0,0,0.7);
+  }
+
+  &.light {
+    p,h1,h2,h3,h4,h5 {
+      color: #444;
+    }
+    h1, h2, h3, h4, h5 {
+      text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+    }
+  }
+
   &.dreambid {
     background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-dreambid-clouds.png")) center 30px repeat-x fixed, url(image_path("bg-dreambid.png")) repeat fixed;
   }
