@@ -9,21 +9,28 @@ body { padding-top: 60px; }
   }
 }
 
+@media (max-width: 767px) {
+  .modal {
+    width: auto !important;
+    margin: 0 !important;
+  }
+}
+
 body {
   background: #F0F0F0 url(image_path("bg-main.png")) repeat fixed;
-  font-family: "ColaborateRegular", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5 {
   margin-bottom: 0.25em;
-  font-family: "ColaborateThinRegular", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
 }
 h1, h2 {
   line-height: 1.5em;
-  font-family: "ChunkFiveRegular";
+  font-weight: 700;
   small {
-    font-family: "ColaborateThinRegular", sans-serif;
+    font-weight: 400;
   }
 }
 h3, h4, h5 {
@@ -34,6 +41,8 @@ h2 {font-size:2em;}
 h3 {font-size:2em;}
 h4 {font-size:1.5em;}
 h5 {font-size:1.2em;}
+
+
 
 .modal {
   width: 800px;
@@ -67,11 +76,19 @@ h5 {font-size:1.2em;}
   }
 }
 
+
+
 .thumbnail {
   margin-bottom: 20px;
   padding: 0;
   border: 10px solid rgba(0,0,0,0.4);
   @include border-radius(10px);
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .padded {
@@ -84,4 +101,7 @@ h5 {font-size:1.2em;}
     font-size: 2.5em;
     line-height: 1.25em;
   }
+}
+
+footer {
 }

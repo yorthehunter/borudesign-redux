@@ -7,6 +7,13 @@
   position: relative;
   padding: 140px 0;
 
+  &.dark {
+    background-color: rgba(0,0,0,0.7);
+  }
+  &.noheight {
+    min-height: auto;
+  }
+
   p,h1,h2,h3,h4,h5 {
     color: #DDD;
   }
@@ -18,6 +25,12 @@
   }
   h1, h2, h3, h4, h5 {
     text-shadow: 0 1px 0 rgba(0,0,0,0.7);
+  }
+
+  .disclaimer {
+    margin: 40px 0;
+    color: #ffab63;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.4);
   }
 
   &.light {
@@ -45,13 +58,10 @@
     background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-dreambid-clouds.png")) center top repeat-x fixed, url(image_path("bg-dreambid.png")) repeat fixed;
   }
   &.signal {
-    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-signal.png")) repeat fixed;
+    background: url(image_path("bg-signal-mesh.png")) center top repeat-x fixed, url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-signal.png")) repeat fixed;
   }
   &.lvlup {
     background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-lvlup-cubes.png")) center top repeat-x fixed, url(image_path("bg-lvlup.png")) repeat fixed;
-  }
-  &.signal {
-    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-signal.png")) repeat fixed;
   }
   &.ocw {
     background-color: #FAF6E3;
