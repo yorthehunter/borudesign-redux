@@ -59,6 +59,11 @@ h5 {font-size:1.2em;}
   }
   .modal-body {
     max-height: 500px;
+    img {
+      max-height: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
@@ -72,4 +77,11 @@ h5 {font-size:1.2em;}
 .padded {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.carousel {
+  .carousel-control {
+    font-size: 2.5em;
+    line-height: 1.25em;
+  }
 }

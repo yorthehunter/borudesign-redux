@@ -78,12 +78,5 @@
   .logo {
     text-align: center;
   }
-  .carousel {
-    margin-top: 120px;
-    text-align: center;
-    img {
-      border: 10px solid rgba(0,0,0,0.4);
-      @include border-radius(10px);
-    }
-  }
+
 }
