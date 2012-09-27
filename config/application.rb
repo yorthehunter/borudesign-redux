@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require 'devise'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -16,7 +17,7 @@ module BorudesignRedux
     config.generators do |g|
       g.view_specs false
       g.helper_specs false
-      
+
     end
 
     # Settings in config/environments/* take precedence over those specified here.
