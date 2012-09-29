@@ -27,4 +27,23 @@ jQuery(document).ready(function() {
     var index = $("#ocw-container a").index(this);
     $("#ocw").carousel(index);
   });
+
+  $("[rel=tooltip]").tooltip();
+
+  $(window).resize(function() {
+    resize();
+  });
+  resize();
+
+  $('a.scroll-to').click(function() {
+    var elementClicked = $(this).attr("href");
+    var destination = $(elementClicked).offset().top;
+    $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, 500 );
+    return false;
+  });
+
+  function resize(){
+    var w = $("#navigation a").width();
+    $("#navigation a").height(w);
+  }
 });

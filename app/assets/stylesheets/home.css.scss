@@ -13,6 +13,10 @@
   &.noheight {
     min-height: auto;
   }
+  &.nopad {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   p,h1,h2,h3,h4,h5 {
     color: #DDD;
@@ -65,17 +69,17 @@
   }
   &.ocw {
     background-color: #FAF6E3;
-    background: url(image_path("bg-lr-gradient.png")) right bottom no-repeat fixed, url(image_path("bg-ul-gradient.png")) left top no-repeat fixed, #FAF6E3 url(image_path("bg-ur-gradient.png")) right top no-repeat fixed;
+    background:  url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-lr-gradient.png")) right bottom no-repeat fixed, url(image_path("bg-ul-gradient.png")) left top no-repeat fixed, #FAF6E3 url(image_path("bg-ur-gradient.png")) right top no-repeat fixed;
   }
   &.abyss {
-    background: url(image_path("bg-abyss-arm.png")) top right fixed no-repeat, url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-abyss.png")) bottom repeat-x fixed;
+    background: url(image_path("bg-darkFade.png")) center bottom repeat-x, url(image_path("bg-abyss-bottom.png")) bottom fixed repeat-x, url(image_path("bg-abyss-arm.png")) top right fixed no-repeat, url(image_path("bg-abyss.png")) repeat fixed;
   }
   .hd, .ft {
-    position: absolute;
-    z-index: 2;
-    height: 106px;
-    width: 100%;
-    pointer-events: none;
+    // position: absolute;
+    // z-index: 2;
+    // height: 106px;
+    // width: 100%;
+    // pointer-events: none;
   }
   .hd {
     background: url(image_path("bg-main-contentTop.png")) center top repeat-x;

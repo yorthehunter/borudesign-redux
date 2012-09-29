@@ -1,5 +1,4 @@
 @import "bootstrap";
-body { padding-top: 60px; }
 @import "bootstrap-responsive";
 
 @media (max-width: 979px) {
@@ -42,6 +41,45 @@ h3 {font-size:2em;}
 h4 {font-size:1.5em;}
 h5 {font-size:1.2em;}
 
+#navigation {
+  a {
+    display: block;
+    min-height: 20px;
+    @include border-radius(3px);
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    @include box-shadow(inset 0 1px 3px rgba(0,0,0,0.4));
+    &.dreambid {
+      background: url(image_path("bg-dreambid.png")) repeat fixed;
+    }
+    &.signal {
+      background: url(image_path("bg-signal.png")) repeat fixed;
+    }
+    &.lvlup {
+      background: url(image_path("bg-lvlup.png")) repeat fixed;
+    }
+    &.ocw {
+      background-color: #FAF6E3;
+    }
+    &.abyss {
+      background: url(image_path("bg-abyss.png")) repeat fixed;
+    }
+  }
+}
+.navigation-phone {
+  a {
+    display: block;
+    padding: 20px 10px;
+    border-top: 1px solidrgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #CCC;
+    @include gradient-vertical(#DDD, #CCC);
+    font-size: 1.2em;
+    i {
+      color: rgba(0,0,0,0.4);
+      text-shadow: 0 1px rgba(255,255,255,0.7), 0 -1px rgba(0,0,0,0.3);
+    }
+  }
+}
 
 
 .modal {
@@ -75,8 +113,6 @@ h5 {font-size:1.2em;}
     }
   }
 }
-
-
 
 .thumbnail {
   margin-bottom: 20px;

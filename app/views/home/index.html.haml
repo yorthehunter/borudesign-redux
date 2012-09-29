@@ -27,8 +27,48 @@
               %a{href:"http://www.github.com/yorthehunter"} GitHub
 
   .ft
+.content.noheight.light.hidden-phone.nopad{style:"margin-bottom: 20px;"}
+  .container
+    .row
+      .span12
+        %h4 Navigation:
+    .row#navigation
+      .span1
+        %a.signal.scroll-to{href:"#signal-nav", rel:"tooltip", title:"Signal"}
+      .span1
+        %a.dreambid.scroll-to{href:"#dreambid-nav", rel:"tooltip", title:"DreamBid"}
+      .span1
+        %a.lvlup.scroll-to{href:"#lvlup-nav", rel:"tooltip", title:"LvlUp"}
+      .span1
+        %a.ocw.scroll-to{href:"#ocw-nav", rel:"tooltip", title:"One Care Way"}
+      .span1
+        %a.abyss.scroll-to{href:"#abyss-nav", rel:"tooltip", title:"The Abyss (Polish) Poster"}
 
-.content.signal
+.visible-phone.navigation-phone
+  .container
+    .row
+      .span12
+        %a.signal.scroll-to{href:"#signal-nav", rel:"tooltip", title:"Signal"}
+          Signal
+          %i.icon-chevron-right.icon-large.pull-right
+      .span12
+        %a.dreambid.scroll-to{href:"#dreambid-nav", rel:"tooltip", title:"DreamBid"}
+          DreamBid
+          %i.icon-chevron-right.icon-large.pull-right
+      .span12
+        %a.lvlup.scroll-to{href:"#lvlup-nav", rel:"tooltip", title:"LvlUp"}
+          LvlUp
+          %i.icon-chevron-right.icon-large.pull-right
+      .span12
+        %a.ocw.scroll-to{href:"#ocw-nav", rel:"tooltip", title:"One Care Way"}
+          One Care Way
+          %i.icon-chevron-right.icon-large.pull-right
+      .span12
+        %a.abyss.scroll-to{href:"#abyss-nav", rel:"tooltip", title:"The Abyss (Polish) Poster"}
+          The Abyss
+          %i.icon-chevron-right.icon-large.pull-right
+
+.content.signal#signal-nav
   .hd
   .container
     .row
@@ -63,7 +103,7 @@
               %img{src:asset_path("img-sm-sig-3.jpg")}
   .ft
 
-.content.dreambid
+.content.dreambid#dreambid-nav
   .hd
   .container
     .row
@@ -98,7 +138,7 @@
               %img{src:asset_path("img-sm-DB-4.jpg")}
   .ft
 
-.content.lvlup.light
+.content.lvlup.light#lvlup-nav
   .hd
   .container
     .row
@@ -130,7 +170,7 @@
   .ft
 
 
-.content.ocw.light
+.content.ocw.light#ocw-nav
   .hd
   .container
     .row
@@ -161,7 +201,7 @@
               %img{src:asset_path("img-sm-ocw-3.jpg")}
   .ft
 
-.content.abyss.light
+.content.abyss.light#abyss-nav
   .hd
   .container
     .row
